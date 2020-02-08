@@ -1,0 +1,46 @@
+main: me.naptie.bukkit.lobby.Main
+name: NeonLobby
+version: 2.0.0
+api-version: "1.15"
+author: Naptie
+depend:
+  - NeonInventory
+  - NeonRank
+  - NeonPlayer
+softdepend: [HolographicDisplays]
+commands:
+  getspawnitems:
+    aliases: [getspawnitem, getspawni, getsitems, getsitem, getsi, gspawnitems, gspawnitem, gspawni, gsitems, gsitem, gsi]
+    description: To give players the items on spawn.
+    usage: /<command>
+  setlobby:
+    aliases: [lobbyset, setspawn, spawnset]
+    description: To set the spawn point for the lobby.
+    usage: /<command> [world] [x] [y] [z] [pitch] [yaw]
+  spawn:
+    aliases: [lobby, gotolobby, backtolobby, gotospawn, backtospawn]
+    description: To teleport players to the spawn location of the lobby.
+    usage: /<command>
+  fly:
+    aliases: [flight, flymode, flightmode]
+    description: To toggle flight mode.
+    usage: /<command> [on|off]
+  viewplayers:
+    aliases: [playervisibility, vp, pv]
+    description: To toggle visibility to see other players.
+    usage: /<command> [on|off]
+  selectlobby:
+    aliases: [sl, selectl, slobby, lobbyselect, lselect, lobbys, lobbyselector, lselector]
+    description: To bring up the lobby selector.
+    usage: /<command>
+  teleporttoparkour:
+    aliases: [teleporttopk, tptoparkour, tptopk, ttpk, ttp]
+    description: To teleport the player to the start location of the parkour.
+    usage: /<command>
+permissions:
+  neonmc.lobby.set:
+    description: Allows players to set the sapwn point for a lobby.
+    default: op
+  neonmc.player.flight:
+    description: Allows players to toggle flight mode.
+    default: op

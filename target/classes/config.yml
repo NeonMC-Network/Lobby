@@ -1,0 +1,53 @@
+languages:
+  - en-GB
+  - en-US
+  - zh-CN
+update-language-files: true
+mysql:
+  enable: true
+  debug: false
+  username: username
+  password: password
+  address: localhost:3306
+  database: neonmc
+  timezone: CST
+  useSSL: false
+
+spawn:
+  world: Lobby
+  x: 0.5
+  y: 40.0
+  z: 0.5
+  pitch: 0.0
+  yaw: -90.0
+
+scoreboard:
+  enable: true
+  title: "&6&lNEONMC"
+
+parkour:
+  world: Lobby
+  x: 12.5
+  y: 29.0
+  z: 38.5
+  pitch: 0.0
+  yaw: -90.0
+
+holograms-update-in-ticks: 6000
+holograms:
+  top-kills:
+    header: "&6%game% Top Kills | 击杀榜"
+    format: "&e%pos%. %player% &7- &a%data%"
+    size: 20
+    world: Lobby
+    x: 19.5
+    y: 71.2
+    z: -32.0
+  top-wins:
+    header: "&6%game% Top Wins | 获胜榜"
+    format: "&e%pos%. %player% &7- &a%data%"
+    size: 20
+    world: Lobby
+    x: 30.5
+    y: 71.2
+    z: -32.0
